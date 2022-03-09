@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="crud.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imgs/lap.jpg" type="image/x-icon">
     <title>Document</title>
 </head>
 
@@ -13,8 +14,8 @@
 
     <div class="crud">
         <div class="head">
-            <h2>crud</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>Management Project</h2>
+            <p>Marketing Project Management .</p>
         </div>
 
         <div class="inputs">
@@ -34,10 +35,10 @@
 
         <div class="outputs">
             <div class="searchBlock">
-                <input type="text" id="search" placeholder="search">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
                 <div class="btnSearch">
-                    <button id="searchTitle">Search by title</button>
-                    <button id="searchCategory">Search by category</button>
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">Search by title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory">Search by category</button>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
 
 
 
-    <script src="crud.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
